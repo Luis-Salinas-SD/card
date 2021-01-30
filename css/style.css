@@ -21,6 +21,9 @@ html {
 body {
   font-family: "Kumbh Sans", sans-serif;
   background-color: var(--dark-cyan);
+  background-image: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
 .flex {
@@ -43,5 +46,71 @@ body {
   overflow: hidden;
   -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.11);
           box-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+}
+
+.card-header {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.card-body-img {
+  border-radius: 50%;
+  border: 5px solid whitesmoke;
+  margin-top: -16%;
+  background: whitesmoke;
+}
+
+.card-body-title {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.card-body-title span {
+  color: var(--dark-gray);
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.card-body-text {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.card-footer {
+  background: #34f0a2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-footer-social {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-footer p {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
